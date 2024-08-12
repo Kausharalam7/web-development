@@ -1,0 +1,16 @@
+#div1{
+    height:200px;
+    width:500px;
+    border:tomato 3px solid;
+
+}
+.blue{
+    color:blue;
+    text-align:center;
+    letter-spacing: 2px;
+}
+#green{
+    color:brown;
+    text-align:right;
+    text-decoration:underline;
+}

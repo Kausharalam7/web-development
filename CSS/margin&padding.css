@@ -1,0 +1,39 @@
+body{
+    background-color: hsla(9, 100%, 64%, 0.5);
+    background-image: url(../Image/educate.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: right;
+    background-size: cover;
+ 
+
+
+}
+p{
+    color:blue;
+    text-align: center;
+   
+    background-color:#cd6409;
+    /* margin-top:40px;
+    margin-left:100px;
+    margin-bottom: 50px;
+    margin-right: 60%; */
+    /* margin:auto */
+    margin:50px 30px 34px 36px;
+    padding:1px 9px 4px 4px;
+
+}
+h2{
+    color:red;
+    text-align:center;
+    background-color: green;
+    border:2px solid rgb(34,23,456);
+}
+div{
+    color:blue;
+    opacity:.5;
+    background-color:green;
+    margin:25px;
+    padding:11px 19px 41px 40px;
+
+}

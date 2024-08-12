@@ -1,0 +1,15 @@
+body{
+    background-color: hsla(9, 100%, 64%, 0.5)
+
+}
+p{
+    color:red;
+    text-align: center;
+    border: 3px solid hsl(248, 10%, 50%)
+}
+h2{
+    color:red;
+    text-align:center;
+    background-color: green;
+    border:2px solid rgb(34,23,456);
+}

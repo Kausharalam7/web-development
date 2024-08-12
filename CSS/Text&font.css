@@ -1,0 +1,27 @@
+body{
+    background-color: lightgrey;
+    color:blue;
+}
+h1{
+    color:red;
+    text-decoration-line: line-through;
+    text-transform: uppercase;
+    letter-spacing: 9px;
+     text-shadow: 2px 2px;
+
+}
+div{
+    width:500px;
+    height:400px;
+    color:red;
+    line-height: .5;
+    font-size: 34px;
+}
+p{
+    text-align: justify;
+    text-indent: 59px;
+}
+a{
+    text-decoration: none;
+    font-weight:bolder;
+}

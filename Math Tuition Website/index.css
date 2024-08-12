@@ -1,0 +1,146 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+}
+#container{
+    width:1350px;
+    /* border:2px red solid; */
+    margin:0px auto;
+}
+#header{
+    height: 100px;
+    padding: 10px 0px;
+}
+#logo{
+    float:left;
+}
+#logo h1 a{
+   
+    text-decoration: none;
+    font-size:50px;
+    font-weight: bold;
+    color:red;
+}
+#searchbox{
+    float:right;
+    background-color: blue;
+    width:500px;
+    height:50px;
+    padding:20px 20px 0px 20px;
+    border:1px white solid;
+    border-radius: 5px;
+}
+.text{
+    float:left;
+    width:350px;
+    padding: 5px;
+    font-size: 15px;
+    color:#514141;
+    font-weight: bold;
+    border:1px #fff solid;
+    border-radius:5px;
+    background:#fff url(../image/searchbar.png) no-repeat right center;
+}
+.submit{
+    float:right;
+    padding: 5px;
+    font-weight: bold;
+    color:white;
+    background-color: #514141;
+    border:1px #fff solid;
+    border-radius: 5px;
+}
+#menu{
+    height: 50px;
+    background-color: skyblue;
+    padding: 10px 0px;
+
+}
+#menu a{
+    padding:0px 75px;
+    height: 20px;
+    text-decoration: none;
+    color:antiquewhite;
+    line-height: 20px;
+    text-transform: capitalize;
+    border-right: 1px solid antiquewhite;
+    font-size: 18px;
+
+
+}
+#menu a:last-child{
+    border-right: none;
+}
+#menu a.log{
+    color:red;
+}
+#menu a:hover,#menu a.active{
+    font-size: 19px;
+    color:#ec3535;
+    font-weight: bold;
+}
+#intro{
+    background-color: #5a96d2;
+    padding:30px;
+    margin:15px 0px;
+}
+#intro h3{
+    font-size:50px;
+    color:#000022;
+}
+#intro p{
+    font-size:25px;
+    text-align:justify;
+    color:#57565d;
+}
+.sidebars{
+    height: 500px;
+    width:600px;
+    border:2px solid #0080ff;
+    border-radius:20px;
+    padding:10px 30px;
+
+}
+#leftsb{
+    float:left;
+}
+#rightsb{
+    float:right;
+}
+.sidebars{
+    color:#514141;
+}
+.sidebars ul{
+    padding-top: 10px;
+}
+#leftsb ul li{
+    padding: 5px 0px 5px 10px;
+}
+#rightsb ul li{
+    padding: 5px 0px 5px 10px;
+}
+.sidebars ul li a{
+    text-decoration: none;
+    font-size:20px;
+    color:#57565d;
+
+}
+.sidebars ul li a:hover{
+    color:#0080ff;
+    font-size:22px;
+    font-weight:bold;
+}
+#footer{
+    height:50px;
+    background-color: #0080ff;
+    padding:10px 30px;
+    margin-top:15px;
+
+}
+#footer p{
+    text-align:center;
+    color:#fff;
+    padding-top:15px;
+}
+
+

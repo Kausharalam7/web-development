@@ -1,0 +1,19 @@
+table,th,td{
+    border:1px solid;
+    width:100%;
+    border-collapse: collapse;
+    /* background-color: aqua; */
+}
+th{
+    height: 50px;
+    background-color: yellowgreen;
+}
+td{
+    text-align:left;
+    vertical-align: middle;
+    height: 30px;
+    padding: 15px;
+}
+tr:hover{
+    background-color: green;
+}
