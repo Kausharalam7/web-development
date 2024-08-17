@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Js popup boxes</h3>
+    <p id="res"></p>
+    <p id="res1"></p>
+    <button type="button" onclick="newWin()">Click</button>
+    <button type="button" onclick="goBack()">Prompt</button>
+<script>
+  //  alert("hello hi")
+  function newWin(){
+    let str;
+    if(confirm("Click a button")){
+        str="You clicked confirm"
+        document.getElementById("res1").innerHTML=str;
+    }
+    else{
+        str="You Clicked CAncel!"
+        document.getElementById("res").innerHTML=str;
+    }
+  }
+  function goBack(){
+    let str;
+    let name=prompt("enter your firstname:","Kaushar");
+    if(name==null || name==""){
+        str="User cancel the prompt";
+        document.getElementById("res").innerHTML=str;
+    }
+    else {
+        str="Hello" + name + "!Welcome to my vlogs";
+        document.getElementById("res").innerHTML=str;
+    }
+  }
+</script>
+</body>
+</html>

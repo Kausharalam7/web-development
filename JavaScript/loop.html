@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS for loop</title>
+</head>
+<body>
+    <h3>JS for loop</h3>
+    <p id="res"> 1</p>
+    <script>
+        /*-- let num="";
+        for(let i=1;i<=10;i++){
+            num+="The number is =" +i+ "<br>";
+        }
+        document.getElementById('res').innerHTML=num -- */
+        const student=["ramesh",'3',"kajf","shyam"]
+        let str="";
+        for(let i=0;i<student.length;i++){
+            str +=student[i] + "<br>";
+        }
+        document.getElementById("res").innerHTML=str;
+    </script>
+</body>
+</html>

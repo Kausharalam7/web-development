@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tooltip{
+            position:relative;
+            display:inline-block;
+            top:50%;
+            left:50%;
+        }
+        .tooltip .tooltiptext{
+            visibility: hidden;
+            width:160px;
+            background-color:black;
+            color:white;
+            padding:5px;
+            text-align:center;
+            border-radius:10px;
+            position:absolute;
+            z-index: 1;
+          /*  left:100px;
+            top:3px; */
+            width:160px;
+            top:100%;
+            left:50%;
+            margin-left: -80px;
+
+        }
+        .tooltip .tooltiptext::after{
+
+        }
+        .tooltip:hover .tooltiptext{
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    <div class="tooltip">CSS Learning
+    <span class="tooltiptext">Cascading Style Sheet</span> </div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+.btn-success{
+    background-color: green;
+
+}
+.btn-warning{
+    background-color: rgb(190, 22, 103);
+}
+.btn-error{
+    background-color: brown;
+}
+.btn-error,.btn-success,.btn-warning{
+    color:white;
+    font-size:20px;
+    border-radius:5px;
+    border:none;
+    cursor:pointer;
+}

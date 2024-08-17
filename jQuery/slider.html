@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery UI Slider Example</title>
+
+    <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- jQuery UI library -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+    <!-- jQuery UI CSS -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <style>
+        #slider-container {
+            margin: 20px;
+            width: 300px;
+        }
+        #slider-value {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Slider Container -->
+    <div id="slider-container">
+        <div id="slider"></div>
+        <div id="slider-value">Value: <span id="value">50</span></div>
+    </div>
+
+    <script>
+        $(function() {
+            // Initialize the slider
+            $("#slider").slider({
+                value: 50, // Default value
+                min: 0,    // Minimum value
+                max: 100,  // Maximum value
+                step: 1,   // Step size
+                slide: function(event, ui) {
+                    // Update the displayed value as the slider is moved
+                    $("#value").text(ui.value);
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

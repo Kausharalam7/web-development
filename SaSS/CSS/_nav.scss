@@ -1,0 +1,17 @@
+nav{
+    display: flex;
+    background-color: #f8f594;
+    a{
+        text-decoration: none;
+        flex:1;
+        font-size:20px;
+        padding:20px;
+        &:hover{
+            background-color: yellow;
+        }
+        &:active{
+            background-color: green;
+
+        }
+    }
+}

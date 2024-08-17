@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  background-color: #f8f594;
+}
+nav a {
+  text-decoration: none;
+  flex: 1;
+  font-size: 20px;
+  padding: 20px;
+}
+nav a:hover {
+  background-color: yellow;
+}
+nav a:active {
+  background-color: green;
+}
+
+article div h3 {
+  color: black;
+  font-size: 29px;
+}
+article div p {
+  color: black;
+}
+
+.btn-success {
+  background-color: green;
+}
+
+.btn-warning {
+  background-color: rgb(190, 22, 103);
+}
+
+.btn-error {
+  background-color: brown;
+}
+
+.btn-error, .btn-success, .btn-warning {
+  color: white;
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */

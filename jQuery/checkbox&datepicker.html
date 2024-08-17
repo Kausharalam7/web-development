@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery UI Checkbox, Radio Button, and Date Picker</title>
+
+    <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- jQuery UI library -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+    <!-- jQuery UI CSS -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <style>
+        .ui-button {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Checkbox Example -->
+    <fieldset>
+        <legend>Choose your options:</legend>
+        <label for="checkbox-1">Option 1</label>
+        <input type="checkbox" id="checkbox-1">
+        
+        <label for="checkbox-2">Option 2</label>
+        <input type="checkbox" id="checkbox-2">
+    </fieldset>
+
+    <!-- Radio Button Example -->
+    <fieldset>
+        <legend>Select an option:</legend>
+        <label for="radio-1">Choice 1</label>
+        <input type="radio" id="radio-1" name="group1">
+        
+        <label for="radio-2">Choice 2</label>
+        <input type="radio" id="radio-2" name="group1">
+    </fieldset>
+
+    <!-- Date Picker Example -->
+    <label for="datepicker">Select a date:</label>
+    <input type="text" id="datepicker">
+
+    <script>
+        $(function() {
+            // Initialize jQuery UI buttons for checkboxes and radio buttons
+            $("#checkbox-1, #checkbox-2").checkboxradio();
+            $("#radio-1, #radio-2").checkboxradio();
+
+            // Initialize the date picker
+            $("#datepicker").datepicker();
+        });
+    </script>
+
+</body>
+</html>

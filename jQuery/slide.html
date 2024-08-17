@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.7.1.js"></script>
+    <style>
+        #panel, #flip{
+            padding:5px;
+            text-align: center;
+            background-color: #eecc;
+            border:1px solid #c3c3c3;
+
+        }
+        #panel{
+            padding:50px;
+            display:none;
+        }
+        #ani{
+            margin-top: 20px;
+            background-color: yellowgreen;
+            height: 100px;
+            width:100px;
+            position:absolute;
+        }
+        
+    </style>
+    <script>
+        $(function(){
+            $("#flip").click(function(){
+                $("#panel").slideToggle("slow");
+            })
+            $("button").click(function(){
+                $("#ani").animate({left:"250px",
+            opacity:".5",
+        height:"150px", width:"150px"});
+            })
+        })
+    </script>
+</head>
+<body>
+    <div id="flip">Click to see the panel</div>
+    <div id="panel">Hello, this is a panel.</div>
+    <button type="button">Start Animate</button>
+    <div id="ani">Animate Me</div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hero-image{
+            background: url(../image/nature.jpg);
+            background-size: cover;
+            height: 500px;
+            position:relative;
+        }
+        .hero-text{
+            text-align:center;
+            position:absolute;
+            top:50%;
+            left:50%;
+            color:yellow;
+
+        }
+        .hero-text a{
+            text-decoration:none;
+        }
+        #example1{
+            background-image: url(../image/searchbar.png), url(../image/educate.jpg);
+            background-position:right bottom, left top;
+            background-repeat:no-repeat, repeat;
+            padding:20px;
+            background-size: 80px 30px,cover;
+        }
+        #example2{
+            border:10px dotted black;
+            padding:30px;
+            background-color: yellowgreen;
+            background-clip:content-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1>My name is Paramish</h1>
+            <h3>And I am a photographer.</h3>
+            <a href="#">Hire Me</a>
+        </div>
+    </div>
+    <div id="example1">
+        <h3>Background Image</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium magnam itaque ducimus voluptatibus sint ullam mollitia, suscipit non deserunt sunt, velit alias. Necessitatibus odio placeat quae alias tempore saepe tenetur velit pariatur, id, ipsum ut praesentium amet fugit eum unde? Maiores laborum iure explicabo voluptates tempora tempore sequi itaque dolorem!</p>
+    </div>
+    <div id="example2">
+        <h3>Background Image</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium magnam itaque ducimus voluptatibus sint ullam mollitia, suscipit non deserunt sunt, velit alias. Necessitatibus odio placeat quae alias tempore saepe tenetur velit pariatur, id, ipsum ut praesentium amet fugit eum unde? Maiores laborum iure explicabo voluptates tempora tempore sequi itaque dolorem!</p>
+    </div>
+</body>
+</html>

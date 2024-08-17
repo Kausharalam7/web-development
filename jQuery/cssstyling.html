@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.7.1.js"></script>
+    <style>
+        .fontset{
+            font-weight: bold;
+            font-size:xx-large;
+            font-family:verdana;
+
+        }
+        .colorset{
+            color:aqua;
+        }
+    </style>
+    <script>
+        $(function(){
+            $("#add").click(function(){
+             //   $("h1,h3,p").addClass("colorset");
+             //   $("div").addClass("fontset");
+             $("h3").toggleClass("colorset");
+
+            })
+        })
+    </script>
+</head>
+<body>
+    <h1>Heading Text</h1>
+    <h3>Small Heading</h3>
+    <p>This is paragraph</p>
+    <div>
+        This text is in Dev
+    </div>
+    <button type="button" id="add">Add Class</button>
+</body>
+</html>

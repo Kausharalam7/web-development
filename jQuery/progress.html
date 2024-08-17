@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery UI Progress Bar Example</title>
+
+    <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- jQuery UI library -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+    <!-- jQuery UI CSS -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <style>
+        #progressbar-container {
+            margin: 20px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Progress Bar Container -->
+    <div id="progressbar-container">
+        <div id="progressbar"></div>
+    </div>
+
+    <!-- Button to Start Progress -->
+    <button id="start-progress">Start Progress</button>
+
+    <script>
+        $(function() {
+            // Initialize the progress bar with a value of 0
+            $("#progressbar").progressbar({
+                value: 0
+            });
+
+            // Simulate progress on button click
+            $("#start-progress").on("click", function() {
+                var progressValue = 0;
+
+                // Increment progress by 10% every second
+                var progressInterval = setInterval(function() {
+                    progressValue += 10;
+                    $("#progressbar").progressbar("value", progressValue);
+
+                    // Stop the interval when the progress reaches 100%
+                    if (progressValue >= 100) {
+                        clearInterval(progressInterval);
+                    }
+                }, 1000);
+            });
+        });
+    </script>
+
+</body>
+</html>

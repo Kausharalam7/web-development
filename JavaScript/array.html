@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            font-weight: bold;
+            font-size:40px;
+            font-style:italic;
+            color:red;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>JavaScript Array</h1>
+    <p id="res"></p>
+    <script>
+        const student=["kaushar","alam","APJ","Abdul","kalam"]
+        student[1]="Kavya";
+        student.unshift("Meena");
+       
+        let str="<ul>"
+            student.forEach(myFun)
+            str+="</ul>";
+        function myFun(value){
+            str+="<li>" + value +"</li>"
+        }
+        document.getElementById('res').innerHTML=str
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .pagination{
+            display: inline-block;
+        }
+        .pagination a{
+            color:black;
+            float:left;
+            padding:5px 10px ;
+
+            text-decoration: none;
+        }
+        .pagination a.active{
+            background-color: green;
+            color:white;
+            border-radius:10px;
+        }
+        .pagination a:hover:not(.active){
+            background-color: blue;
+            border-radius:4px;
+        }
+    </style>
+</head>
+<body>
+    <h3>Simple Pagination</h3>
+    <div class="pagination">
+        <a href="#">Prev</a>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">7</a>
+            <a href="#" class="active">8</a>
+            <a href="#">9</a>
+            <a href="#">Next</a>
+
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sortable and Selectable Lists</title>
+
+    <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- jQuery UI library -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+    <!-- jQuery UI CSS -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <style>
+        .selectable {
+            width: 200px;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            float: left;
+            margin-right: 20px;
+        }
+
+        .selectable li {
+            margin: 3px;
+            padding: 0.4em;
+            font-size: 1.2em;
+            height: 18px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+            cursor: pointer;
+        }
+
+        .ui-selected {
+            background-color: #2c97de;
+            color: white;
+        }
+
+        .container {
+            display: flex;
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Selectable and Sortable List 1 -->
+    <ol id="selectable1" class="selectable">
+        <li class="ui-state-default">Item 1</li>
+        <li class="ui-state-default">Item 2</li>
+        <li class="ui-state-default">Item 3</li>
+        <li class="ui-state-default">Item 4</li>
+        <li class="ui-state-default">Item 5</li>
+    </ol>
+
+    <!-- Selectable and Sortable List 2 -->
+    <ol id="selectable2" class="selectable">
+        <li class="ui-state-default">Item A</li>
+        <li class="ui-state-default">Item B</li>
+        <li class="ui-state-default">Item C</li>
+        <li class="ui-state-default">Item D</li>
+        <li class="ui-state-default">Item E</li>
+    </ol>
+</div>
+
+<script>
+    $(function() {
+        // Make both lists selectable
+        <!-- $("#selectable1, #selectable2").selectable(); -->
+
+        // Make both lists sortable and connect them to each other
+        $("#selectable1, #selectable2").sortable({
+            connectWith: ".selectable",
+            placeholder: "ui-state-highlight"
+        })//.disableSelection();
+    });
+</script>
+
+</body>
+</html>

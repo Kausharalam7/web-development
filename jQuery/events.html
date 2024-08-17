@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.7.1.js"></script>
+    <title>jQuery Events</title>
+    <script>
+         $(function(){
+            $("input").focus(function(){
+                $(this).css("background-color","Yellow");
+            })
+            $("input").blur(function(){
+                $(this).css("background-color","green");
+            })
+          /*  $("p").click(function(){
+                $(this).hide()
+            })  */
+        })
+        /* $(document).ready(function(){
+            $("button").click(function(){
+                $("p:odd").hide();
+
+            })
+
+        })*/
+    </script> 
+</head>
+<body>
+    Name : <input type="text" name="name"> <br> <br>
+    Email: <input type="email" name="email">
+
+     <!-- <h2>This is heading</h2>
+     <p>This is paragraph</p>
+     <p>This is a another paragraph</p>
+     <p>This is paragraph</p>
+     <p>This is a another paragraph</p>
+     <p>In last click me too</p> -->
+     <!-- <button type="button">Click me to hide</button> -->
+
+
+
+   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+ 
+</body>
+</html>

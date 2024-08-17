@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery UI Autocomplete and Button Example</title>
+
+    <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- jQuery UI library -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+    <!-- jQuery UI CSS -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <style>
+        #autocomplete-input {
+            margin: 20px;
+            padding: 5px;
+        }
+
+        .ui-button {
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Autocomplete Input -->
+    <label for="autocomplete-input">Search:</label>
+    <input id="autocomplete-input" type="text">
+
+    <!-- Button -->
+    <button id="search-button">Search</button>
+
+    <script>
+        $(function() {
+            // Sample data for autocomplete
+            var availableTags = [
+                "Apple",
+                "Banana",
+                "Cherry",
+                "Date",
+                "Grape",
+                "Lemon",
+                "Mango",
+                "Orange",
+                "Papaya",
+                "Pineapple",
+                "Strawberry"
+            ];
+
+            // Initialize autocomplete
+            $("#autocomplete-input").autocomplete({
+                source: availableTags
+            });
+
+            // Initialize button with a click event
+            $("#search-button").button().on("click", function() {
+                var searchValue = $("#autocomplete-input").val();
+                alert("You searched for: " + searchValue);
+            });
+        });
+    </script>
+
+</body>
+</html>

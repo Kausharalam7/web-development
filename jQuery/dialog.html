@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery UI Dialog Example</title>
+
+    <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- jQuery UI library -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+    <!-- jQuery UI CSS -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <style>
+        #dialog {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Button to open the dialog -->
+    <button id="open-dialog">Open Dialog</button>
+
+    <!-- Dialog content -->
+    <div id="dialog" title="Basic Dialog">
+        <p>This is a jQuery UI dialog box. You can place any content here, like text, forms, or even images.</p>
+    </div>
+
+    <script>
+        $(function() {
+            // Initialize the dialog
+            $("#dialog").dialog({
+                autoOpen: false, // Prevents the dialog from opening automatically
+                modal: true,     // Makes the dialog modal (prevents interacting with other parts of the page)
+                buttons: {
+                    "OK": function() {
+                        $(this).dialog("close");
+                    },
+                    "Cancel": function() {
+                        $(this).dialog("close");
+                    }
+                }
+            });
+
+            // Open the dialog on button click
+            $("#open-dialog").on("click", function() {
+                $("#dialog").dialog("open");
+            });
+        });
+    </script>
+
+</body>
+</html>

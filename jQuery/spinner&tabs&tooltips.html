@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery UI Widgets Example</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <style>
+        .ui-widget-content {
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Spinner Widget -->
+<label for="spinner">Quantity:</label>
+<input id="spinner" name="quantity">
+
+<!-- Tabs Widget -->
+<div id="tabs">
+    <ul>
+        <li><a href="#tab-1">Tab 1</a></li>
+        <li><a href="#tab-2">Tab 2</a></li>
+    </ul>
+    <div id="tab-1">
+        <p>This is the content of Tab 1.</p>
+    </div>
+    <div id="tab-2">
+        <p>This is the content of Tab 2.</p>
+    </div>
+</div>
+
+<!-- Tooltip Widget -->
+<button title="This is a tooltip">Hover me for a tooltip</button>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+$(function() {
+    // Initialize Spinner
+    $("#spinner").spinner({
+        min: 2,
+        max: 100,
+        step: 5
+    });
+
+    // Initialize Tabs
+    $("#tabs").tabs();
+
+    // Initialize Tooltips
+    $(document).tooltip();
+});
+</script>
+
+</body>
+</html>

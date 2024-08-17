@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .text1{
+            white-space:nowrap;
+            width:200px;
+            border:1px solid black;
+            overflow:hidden;
+            text-overflow:clip;
+        }
+        .text2{
+            white-space:nowrap;
+            width:200px;
+            border:1px solid black;
+            overflow:hidden;
+            text-overflow:ellipsis;
+        }
+        .text1:hover{
+            overflow:visible;
+        }
+        .text2:hover{
+            overflow:visible;
+        }
+        .text3{
+            width:300px;
+            border:1px solid black;
+            word-break:break-all;
+        }
+        span.ap{
+            writing-mode: sideways-rl;
+        }
+    </style>
+</head>
+<body>
+    <h1>Text Overflow Property</h1>
+    <p class="text1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ipsum aliquid nemo quam fugit natus omnis accusantium iste, optio veritatis explicabo, in quia, nobis necessitatibus laboriosam repellendus ad nisi esse consequatur perspiciatis eaque. Consequuntur neque enim dolor? Amet doloribus aspernatur ipsa. Officia ullam sit accusamus maiores rem mollitia in perspiciatis!</p>
+    <p class="text2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ipsum aliquid nemo quam fugit natus omnis accusantium iste, optio veritatis explicabo, in quia, nobis necessitatibus laboriosam repellendus ad nisi esse consequatur perspiciatis eaque. Consequuntur neque enim dolor? Amet doloribus aspernatur ipsa. Officia ullam sit accusamus maiores rem mollitia in perspiciatis!</p>
+    <p class="text3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ipsum aliquid nemo quam fugit natus omnis accusantium iste, optio veritatis explicabo, in quia, nobis necessitatibus laboriosam repellendus ad nisi esse consequatur perspiciatis eaque. Consequuntur neque enim dolor? Amet doloribus aspernatur ipsa. Officia ullam sit accusamus maiores rem mollitia in perspiciatis!</p>
+    <p class="text4">This is a <span class="ap">
+paragraph.
+    </span></p>
+</body>
+</html>
